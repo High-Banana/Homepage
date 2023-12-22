@@ -76,10 +76,49 @@ body {
   display: grid;
   padding: 10px;
   grid-template-rows: 30% 100%;
+  gap: 20px;
 }
 
 .project-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.project-heading a {
+  color: black;
+}
+
+.project-link {
+  display: flex;
+  gap: 12px;
+  transition: 0.3s;
+}
+
+.project-link a {
+  color: black;
+  font-size: 20px;
+  animation: spin-animation-reverse 0.7s 1;
+}
+
+.project-link a:hover {
+  animation: spin-animation 0.7s 1;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-animation-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
