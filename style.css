@@ -1,10 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-:root {
-  --default-margin: 30px 100px;
+* {
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -34,12 +31,26 @@ body {
   margin: 50px 0 50px 0;
   background-color: white;
   z-index: 0;
-  gap: 20px;
+  gap: 50px;
 }
 
-.about-card i {
+.about-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-description p {
+  font-size: 18px;
+}
+
+.about-links {
+  display: flex;
+  justify-content: end;
+}
+.about-links i {
   text-align: end;
   font-size: 30px;
+  color: black;
 }
 
 .project-container {
